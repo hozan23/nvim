@@ -70,7 +70,7 @@ require("mason-lspconfig").setup({
         "rust_analyzer",
         "gopls",
         "ruff_lsp",
-        "tsserver",
+        "ts_ls",
         "clangd",
         "taplo",
         "bashls",
