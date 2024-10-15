@@ -69,7 +69,7 @@ require("mason-lspconfig").setup({
         "lua_ls",
         "rust_analyzer",
         "gopls",
-        "ruff_lsp",
+        "pylsp",
         "ts_ls",
         "clangd",
         "taplo",
@@ -109,11 +109,11 @@ lspconfig.lua_ls.setup({
 lspconfig.rust_analyzer.setup({
     -- Server-specific settings. See `:help lspconfig-setup`
     -- settings = {
-    -- 	["rust-analyzer"] = {
-    -- 		cargo = {
-    -- 			allFeatures = true,
-    -- 		},
-    -- 	},
+    --     ["rust-analyzer"] = {
+    --         cargo = {
+    --             allFeatures = true,
+    --         },
+    --     },
     -- },
 })
 
