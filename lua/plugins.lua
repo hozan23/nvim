@@ -19,8 +19,8 @@ return require("packer").startup(function(use)
     use({ "hrsh7th/nvim-cmp" })
     use({ "hrsh7th/cmp-nvim-lsp" })
 
-    -- Gruvbox theme
-    use({ "ellisonleao/gruvbox.nvim" })
+    -- Kanagawa theme
+    use({ "rebelot/kanagawa.nvim"})
 
     -- Vim airline plugin
     use({ "vim-airline/vim-airline" })
