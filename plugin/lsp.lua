@@ -117,5 +117,15 @@ lspconfig.rust_analyzer.setup({
     -- },
 })
 
+lspconfig.yamlls.setup({
+    settings = {
+        ["yaml"] = {
+            format = {
+                enable = true,
+            }
+        }
+    }
+})
+
 -- dartls setup
 lspconfig.dartls.setup({})
