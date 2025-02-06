@@ -22,9 +22,8 @@ return require("packer").startup(function(use)
     -- Kanagawa theme
     use({ "rebelot/kanagawa.nvim"})
 
-    -- Vim airline plugin
-    use({ "vim-airline/vim-airline" })
-    use({ "vim-airline/vim-airline-themes" })
+    -- Vim lualine plugin
+    use({ "nvim-lualine/lualine.nvim" })
 
     -- Git plugins
     use({ "tpope/vim-fugitive" })
