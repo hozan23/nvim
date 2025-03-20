@@ -1,32 +1,24 @@
--- This file can be loaded by calling `lua require('plugins')` from your
--- init.vim
-
--- Only required if you have packer configured as `opt`
-vim.cmd([[packadd packer.nvim]])
-
-return require("packer").startup(function(use)
-    -- Packer can manage itself
-    use("wbthomason/packer.nvim")
-
+return {
     -- Lsp config plugin
-    use({ "neovim/nvim-lspconfig" })
+    "neovim/nvim-lspconfig",
 
     -- Manage lsp servers, linters, and formatters
-    use({ "williamboman/mason.nvim" })
-    use({ "williamboman/mason-lspconfig.nvim" })
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
 
     -- Auto completion
-    use({ "hrsh7th/nvim-cmp" })
-    use({ "hrsh7th/cmp-nvim-lsp" })
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-nvim-lsp",
 
     -- Kanagawa theme
-    use({ "rebelot/kanagawa.nvim"})
+    "rebelot/kanagawa.nvim",
 
     -- Vim lualine plugin
-    use({ "nvim-lualine/lualine.nvim" })
+    "nvim-lualine/lualine.nvim",
 
     -- Git plugins
-    use({ "tpope/vim-fugitive" })
-    use({ "tpope/vim-rhubarb" })
-    use({ "shumphrey/fugitive-gitlab.vim" })
-end)
+    "tpope/vim-fugitive",
+    "tpope/vim-rhubarb",
+    "shumphrey/fugitive-gitlab.vim",
+}
+
