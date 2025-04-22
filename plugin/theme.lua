@@ -26,7 +26,7 @@ local lualine_theme = {
     normal = {
         a = { bg = colors.primary, fg = colors.white },
         b = { bg = colors.darkgray, fg = colors.white },
-        c = { bg = colors.darkgray, fg = colors.white  }
+        c = { bg = colors.darkgray, fg = colors.white }
     },
     insert = {
         a = { bg = colors.primary, fg = colors.white },

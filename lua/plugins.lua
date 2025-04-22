@@ -2,6 +2,9 @@ return {
     -- Lsp config plugin
     "neovim/nvim-lspconfig",
 
+    -- lua snip
+    "L3MON4D3/LuaSnip",
+
     -- Manage lsp servers, linters, and formatters
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -21,4 +24,3 @@ return {
     "tpope/vim-rhubarb",
     "shumphrey/fugitive-gitlab.vim",
 }
-
