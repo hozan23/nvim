@@ -105,18 +105,6 @@ lspconfig.lua_ls.setup({
     },
 })
 
--- rust_analyzer setup
-lspconfig.rust_analyzer.setup({
-    -- Server-specific settings. See `:help lspconfig-setup`
-    -- settings = {
-    --     ["rust-analyzer"] = {
-    --         cargo = {
-    --             allFeatures = true,
-    --         },
-    --     },
-    -- },
-})
-
 lspconfig.yamlls.setup({
     settings = {
         ["yaml"] = {
