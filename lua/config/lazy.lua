@@ -31,7 +31,7 @@ vim.opt.smartindent = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
 vim.opt.signcolumn = "auto:1"
 
 vim.opt.tabstop = 4
