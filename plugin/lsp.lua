@@ -1,5 +1,3 @@
-local lspconfig = require("lspconfig")
-
 --------------------------
 -- LSP keybindings
 --------------------------
@@ -30,7 +28,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 --------------------------
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 local default_setup = function(server)
-    lspconfig[server].setup({ capabilities = lsp_capabilities })
+    vim.lsp.config[server].setup({ capabilities = lsp_capabilities })
 end
 
 local cmp = require("cmp")
@@ -86,7 +84,7 @@ require("mason-lspconfig").setup({
 })
 
 -- Disable the annoying warning "undefined vim"
-lspconfig.lua_ls.setup({
+vim.lsp.config('lua_ls', {
     capabilities = lsp_capabilities,
     settings = {
         Lua = {
@@ -105,7 +103,7 @@ lspconfig.lua_ls.setup({
     },
 })
 
-lspconfig.yamlls.setup({
+vim.lsp.config('yamlls', {
     settings = {
         ["yaml"] = {
             format = {
@@ -116,4 +114,4 @@ lspconfig.yamlls.setup({
 })
 
 -- dartls setup
-lspconfig.dartls.setup({})
+vim.lsp.config('dartls', {})
