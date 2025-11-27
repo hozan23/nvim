@@ -10,11 +10,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
         end, opts)
 
         vim.keymap.set("n", "]e", function()
-            vim.diagnostic.goto_next()
+            vim.diagnostic.jump({ count = 1, float = true })
         end, opts)
 
         vim.keymap.set("n", "[e", function()
-            vim.diagnostic.goto_prev()
+            vim.diagnostic.jump({ count = -1, float = true })
         end, opts)
 
         vim.keymap.set({ "n", "x" }, "<C-i>",
@@ -28,7 +28,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 --------------------------
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 local default_setup = function(server)
-    vim.lsp.config[server].setup({ capabilities = lsp_capabilities })
+    vim.lsp.config[server].settings({ capabilities = lsp_capabilities })
 end
 
 local cmp = require("cmp")
@@ -114,4 +114,8 @@ vim.lsp.config('yamlls', {
 })
 
 -- dartls setup
-vim.lsp.config('dartls', {})
+vim.lsp.enable("dartls")
+
+-- vim.lsp.config.dartls = {
+--     cmd = { "dart", "language-server", "--protocol=lsp" },
+-- }
