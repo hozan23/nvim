@@ -41,6 +41,9 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 20
+
 --------------------------
 -- Keymap
 --------------------------

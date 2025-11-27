@@ -115,7 +115,3 @@ vim.lsp.config('yamlls', {
 
 -- dartls setup
 vim.lsp.enable("dartls")
-
--- vim.lsp.config.dartls = {
---     cmd = { "dart", "language-server", "--protocol=lsp" },
--- }
