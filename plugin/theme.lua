@@ -1,7 +1,7 @@
 local colors = {
     black    = '#1a1826',
     primary  = "#44376a",
-    darkgray = '#11101a',
+    darkgray = '#0B0A10',
     white    = "#dcd7ba",
 }
 
@@ -59,5 +59,8 @@ require('lualine').setup({
     options = {
         icons_enabled = false,
         theme = lualine_theme,
+        disabled_filetypes = {
+            statusline = { "netrw" },
+        },
     }
 })
