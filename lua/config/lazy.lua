@@ -44,10 +44,20 @@ vim.opt.expandtab = true
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 20
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "netrw",
+    callback = function()
+        vim.keymap.set("n", "l", "<CR>", { buffer = true, remap = true })
+        vim.keymap.set("n", "h", "-", { buffer = true, remap = true })
+
+    end,
+})
+
 --------------------------
 -- Keymap
 --------------------------
 vim.keymap.set("n", "<C-n>", vim.cmd.noh)
+vim.keymap.set("n", "<C-f>", vim.cmd.Lexplore)
 
 --------------------------
 -- Setup lazy
